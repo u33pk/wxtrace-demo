@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="computeValue(100000) — counting loop" />
+
+        <Button
+            android:id="@+id/btn_crc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="crc32 — bit loop" />
+
+        <Button
+            android:id="@+id/btn_vm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="vm(100) — bytecode interpreter" />
+
+        <Button
+            android:id="@+id/btn_fib"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="fib(24) — recursion" />
+
+        <Button
+            android:id="@+id/btn_sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sort(64) — nested loops" />
+
+        <Button
+            android:id="@+id/btn_matrix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="matrix 8x8 — triple loop" />
+
+        <Button
+            android:id="@+id/btn_jni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="jni burst — FindClass/NewStringUTF/..." />
+
+        <Button
+            android:id="@+id/btn_heavy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="heavy VM — 25 ops + JNI callbacks + sort/fib/hash" />
+
+        <Button
+            android:id="@+id/btn_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="run all" />
+
+        <Button
+            android:id="@+id/btn_droidguard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DroidGuard — load external dex/so" />
+
+        <Button
+            android:id="@+id/btn_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="refresh func offsets" />
+
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:textSize="11sp"
+            android:paddingTop="12dp"
+            android:text="" />
+
+    </LinearLayout>
+
+</ScrollView>
